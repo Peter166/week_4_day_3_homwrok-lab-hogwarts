@@ -1,0 +1,13 @@
+<h2>Hogwarts students:</h2>
+
+
+<%  for student in @students %>
+<p>First name:<%= student.first_name%></p>
+<p>Last name:<%= student.last_name%></p>
+<p>Age:<%= student.age%></p>
+<p>House:<%= student.house_id%></p>
+<p>ID: <%=student.id%></p>
+
+  <p><a href="/home/index/<%= student.id %>">Show Student</a></p> <!-- this allows us to create link that have the id of the order. <= order.id >  -->
+  <hr />
+  <% end %>
